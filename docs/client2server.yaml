@@ -1,0 +1,29 @@
+ChatPacket:
+  type: chatmessage
+  payload:
+    text: hello world
+
+Pings:
+  type: ping
+  payload:
+    position: #x, y
+    type: ATTENTION / WARNING / ATTACK_HERE / MOVING_TO / WILL_DASH
+
+Emotes:
+  type: emote
+  payload:
+    icon: TROLL_FACE
+
+Moving: # responds with path
+  type: movement
+  payload:
+    type: set_waypoint / set_target / clear_movement
+    position: #x, y
+
+Abilities:
+  type: action
+  payload:
+    type: hover / set
+    action: table_flip
+    payload:
+      target: subgrid-location / location / character / self (+free) # maybe array

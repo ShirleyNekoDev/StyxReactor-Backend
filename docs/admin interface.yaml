@@ -1,0 +1,11 @@
+Set_Player_Name:
+  type: set_playername
+  payload:
+    name: Spieler 1
+
+Set_Character:
+  type: set_character
+  payload:
+    health: 100
+    abilities:
+    #something

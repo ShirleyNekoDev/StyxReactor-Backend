@@ -1,0 +1,30 @@
+Send World:
+  type: world
+  payload:
+    size: #width, height
+    grid: # 1d array of fields
+      Field: # type
+        type: hole / accessible / object / wall
+        cover directions: n, s # server will generate opposing covers and wall covers
+        payload:
+          stealth: # if accessible
+          texture: # some texture id # if not hole
+          object: # id # if object
+    objects: [Object]
+      Object:
+        id: # id
+        outline: # array of points (convex)
+
+Send Game State:
+  type: gamestate
+  payload:
+    characters:
+      - position: #x, y
+        abilities:
+          - id: #
+            cooldown: #
+        health: #
+        energy: #
+        powerups:
+    stealthfields:
+
