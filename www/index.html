@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Totally-Not-AtlasReactor-Server</title>
+</head>
+<body>
+<h1>Totally Not AtlasReactor Server</h1>
+<label for="playerId">PlayerID:</label>
+<input type="text" value="" id="playerId"/>
+<input type="button" value="Connect" id="connectBtn" onclick="openWS()"/>
+<script>
+    let ws;
+    window.onbeforeunload = closeWS;
+    const playerIdField = document.getElementById("playerId");
+    const connectBtn = document.getElementById("connectBtn");
+
+    function openWS() {
+        const playerId = playerIdField.value;
+        if (playerId && playerId.length)
+            ws = new WebSocket("ws://localhost:8080/ws?playerId=" + playerId);
+        else
+            ws = new WebSocket("ws://localhost:8080/ws");
+
+        ws.onopen = function (evt) {
+            console.log(evt);
+            connectBtn.value = "Disconnect";
+            connectBtn.onclick = closeWS;
+        };
+        ws.onmessage = function (evt) {
+            console.log(evt)
+        };
+        ws.onerror = function (evt) {
+            console.log(evt)
+        };
+        ws.onclose = function (evt) {
+            console.log(evt);
+            console.log("Reload in 1s")
+            setTimeout(function () {
+                window.location.reload(true);
+            }, 1000);
+        };
+    }
+
+    function closeWS() {
+        if (ws) {
+            ws.onclose = function () {
+                connectBtn.value = "Connect";
+                connectBtn.onclick = openWS;
+            };
+            ws.close();
+        }
+    }
+</script>
+</body>
+</html>
