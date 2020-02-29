@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>World Preview</title>
+    <style>
+        #output {
+            border-collapse: collapse;
+        }
+        #output td {
+            border: thin solid black;
+            margin: 0;
+            width: 20px;
+            height: 20px;
+        }
+        #output td.wall {
+            color: white;
+            background-color: black;
+        }
+        #output td.stealth {
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+Json World:<br>
+<textarea id="jsonWorld"></textarea><br>
+<button onclick="readWorld()">Read World</button>
+<hr>
+<table id="output">
+</table>
+<script>
+    const jsonField = document.getElementById("jsonWorld");
+    const table = document.getElementById("output");
+
+    function readWorld() {
+        const world = JSON.parse(jsonField.value);
+        console.log(world);
+        table.innerHTML = "";
+
+        for (let y = 0; y < world.height; y++) {
+            let tr = document.createElement("tr");
+            for (let x = 0; x < world.width; x++) {
+                tr.appendChild(createField(world.grid[x + world.width * y]));
+            }
+            table.appendChild(tr);
+        }
+    }
+
+    function createField(field) {
+        let td = document.createElement("td");
+        switch (field.type) {
+            case "ACCESSIBLE":
+                if (field.isStealth) {
+                    td.classList.add("stealth");
+                    td.textContent = "S";
+                } else {
+                    td.classList.add("accessible");
+                    td.textContent = "A";
+                }
+                break;
+            case "WALL":
+                td.classList.add("wall");
+                td.textContent = "W";
+                break;
+        }
+        return td;
+    }
+</script>
+</body>
+</html>
