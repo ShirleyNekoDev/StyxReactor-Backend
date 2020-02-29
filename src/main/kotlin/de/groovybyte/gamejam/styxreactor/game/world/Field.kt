@@ -13,7 +13,7 @@ sealed class Field(
          * field for players
          */
         ACCESSIBLE,
-//        HOLE,
+        HOLE,
 //        /**
 //         * has a collider for filling the field
 //         */
@@ -46,6 +46,16 @@ sealed class Field(
         companion object {
             val DEFAULT = WallField(
                 textureId = Textures.Field.WALL.id
+            )
+        }
+    }
+
+    data class HoleField(
+        override val textureId: TextureId
+    ) : Field(FieldType.HOLE) {
+        companion object {
+            val DEFAULT = HoleField(
+                textureId = Textures.Field.HOLE.id
             )
         }
     }

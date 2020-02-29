@@ -6,19 +6,37 @@
     <style>
         #output {
             border-collapse: collapse;
+            background-color: #666;
+            background-image: linear-gradient(45deg, #999 25%, transparent 25%),
+            linear-gradient(-45deg, #999 25%, transparent 25%),
+            linear-gradient(45deg, transparent 75%, #999 75%),
+            linear-gradient(-45deg, transparent 75%, #999 75%);
+            background-size: 8px 8px;
+            background-position: 0 0, 0 4px, 4px -4px, -4px 0;
         }
+
         #output td {
             border: thin solid black;
             margin: 0;
-            width: 20px;
-            height: 20px;
+            width: 25px;
+            height: 25px;
+            font-weight: bold;
+            text-align: center;
+            background-color: white;
         }
+
         #output td.wall {
             color: white;
             background-color: black;
         }
+
         #output td.stealth {
             background-color: lightgrey;
+        }
+
+        #output td.hole {
+            color: white;
+            background-color: transparent;
         }
     </style>
 </head>
@@ -62,6 +80,10 @@ Json World:<br>
             case "WALL":
                 td.classList.add("wall");
                 td.textContent = "W";
+                break;
+            case "HOLE":
+                td.classList.add("hole");
+                td.textContent = "H";
                 break;
         }
         return td;

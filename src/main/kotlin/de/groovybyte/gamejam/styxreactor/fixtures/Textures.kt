@@ -4,7 +4,8 @@ object Textures {
     enum class Field : IdString {
         EMPTY,
         SMOKE,
-        WALL
+        WALL,
+        HOLE
     }
 }
 
