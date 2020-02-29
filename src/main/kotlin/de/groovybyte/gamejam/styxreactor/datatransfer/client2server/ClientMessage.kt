@@ -10,6 +10,7 @@ import de.groovybyte.gamejam.styxreactor.utils.WebSocketController
 
 class ClientMessage(
     val ctx: WebSocketController<GameSession>.ClientContext,
+    val packetData: String,
     val objectMapper: ObjectMapper,
     val json: JsonNode
 ) {
@@ -19,11 +20,12 @@ class ClientMessage(
         fun parse(
             ctx: WebSocketController<GameSession>.ClientContext,
             objectMapper: ObjectMapper,
-            packet: String
+            packetData: String
         ) = ClientMessage(
             ctx,
+            packetData,
             objectMapper,
-            objectMapper.readTree(packet)
+            objectMapper.readTree(packetData)
         )
     }
 

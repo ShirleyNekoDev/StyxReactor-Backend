@@ -25,6 +25,8 @@ class GameController(
 
     private class Echo(val data: String) : Entity<Echo>
 
+    private fun ClientMessage.asEcho() = Echo(packetData)
+
     private fun ClientContext.sendError(type: String, data: Any? = null) =
         send(
             ServerMessage(
@@ -39,18 +41,23 @@ class GameController(
         jsonMessage: WebSocketMessage
     ) {
         try {
-            val packet = ClientMessage.parse(ctx, objectMapper, jsonMessage.value())
-            when (packet.command) {
-                "test_start" -> ctx.session.startTestMessageSender()
-                "test_stop" -> ctx.session.stopTestMessageSender()
-                "echo" -> ctx.send(ServerMessage("echo", Echo(jsonMessage.value())))
-                "chatmessage" -> ChatController.receive(ctx, packet)
-            }
+            routeMessage(
+                ClientMessage.parse(ctx, objectMapper, jsonMessage.value())
+            )
         } catch (ex: InvalidPayloadException) {
             ctx.sendError("invalid payload", ex.payload)
         } catch (ex: Exception) {
             ex.printStackTrace()
             ctx.sendError("unknown error", "")
+        }
+    }
+
+    fun routeMessage(packet: ClientMessage) {
+        when (packet.command) {
+            "test_start" -> packet.ctx.session.startTestMessageSender()
+            "test_stop" -> packet.ctx.session.stopTestMessageSender()
+            "echo" -> packet.ctx.send(ServerMessage("echo", packet.asEcho()))
+            "chatmessage" -> ChatController.receive(packet.ctx, packet)
         }
     }
 
