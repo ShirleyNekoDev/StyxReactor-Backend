@@ -1,5 +1,6 @@
 package de.groovybyte.gamejam.styxreactor.utils
 
+import de.groovybyte.gamejam.styxreactor.datatransfer.Message
 import io.jooby.*
 import org.slf4j.Logger
 import java.io.IOException
@@ -61,7 +62,7 @@ abstract class WebSocketController<P>(
         }
     }
 
-    protected inner class ClientContext(
+    inner class ClientContext(
         private val webSocket: WebSocket,
         val id: UUID,
         val userAgent: String,
@@ -69,15 +70,15 @@ abstract class WebSocketController<P>(
     ) {
         val others: Collection<ClientContext> get() = clients - this
 
-        fun broadcast(message: String, includeSelf: Boolean = true) {
+        fun broadcast(message: Message<*>, includeSelf: Boolean = true) {
             synchronized(clients) {
                 val receivers = if (includeSelf) clients else others
                 receivers.forEach { it.send(message) }
             }
         }
 
-        fun send(message: String) {
-            webSocket.send(message)
+        fun send(message: Message<*>) {
+            webSocket.render(message)
         }
 
         // INTERNAL ----------------------
