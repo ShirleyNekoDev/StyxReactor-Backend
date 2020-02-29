@@ -11,6 +11,6 @@ class World(
         if (!(x in 0..width && y in 0..height)) {
             throw IndexOutOfBoundsException()
         }
-        return grid[x + width * y];
+        return grid[x + width * y]
     }
 }

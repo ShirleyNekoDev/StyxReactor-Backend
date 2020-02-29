@@ -14,7 +14,7 @@ object WorldFactory {
         val grid = List(width * height) { index ->
             val x = index % width
             val y = index / width
-            if(x == 0 || x == width - 1 || y == 0 || y == height - 1) {
+            if (x == 0 || x == width - 1 || y == 0 || y == height - 1) {
                 WALL_FIELD.copy()
             } else {
                 EMPTY_FIELD.copy()

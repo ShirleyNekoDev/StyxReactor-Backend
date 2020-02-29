@@ -33,9 +33,11 @@ class StyxReactorServer : Kooby({
 
     //    decorator(AccessLogHandler())
     before(TraceIdHandler())
-    before(DefaultHeadersHandler(
-        "Server" to APP_TITLE //"CERN httpd/3.0A"
-    ))
+    before(
+        DefaultHeadersHandler(
+            "Server" to APP_TITLE //"CERN httpd/3.0A"
+        )
+    )
     assets("/", "www/index.html")
 
     val playerController = GameController(log, objectMapper)

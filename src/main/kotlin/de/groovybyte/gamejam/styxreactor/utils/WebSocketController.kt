@@ -103,8 +103,8 @@ abstract class WebSocketController<P : Any>(
         override fun toString(): String = id.toString()
 
         override fun close() {
-            data.apply {
-                if(this is Closeable) close()
+            session.apply {
+                if (this is Closeable) close()
             }
         }
     }
