@@ -1,6 +1,6 @@
 package de.groovybyte.gamejam.styxreactor.datatransfer
 
-class Message<Type : Entity<Type>>(
+class Message(
     val command: String,
-    val payload: Type
+    val payload: Any
 )

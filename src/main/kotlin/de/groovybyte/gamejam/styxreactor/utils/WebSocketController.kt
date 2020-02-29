@@ -3,10 +3,11 @@ package de.groovybyte.gamejam.styxreactor.utils
 import de.groovybyte.gamejam.styxreactor.datatransfer.Message
 import io.jooby.*
 import org.slf4j.Logger
+import java.io.Closeable
 import java.io.IOException
 import java.util.*
 
-abstract class WebSocketController<P>(
+abstract class WebSocketController<P : Any>(
     protected val log: Logger
 ) : WebSocket.Initializer, AutoCloseable {
     private val clients: MutableSet<ClientContext> = HashSet()
@@ -15,7 +16,7 @@ abstract class WebSocketController<P>(
 
     private fun checkConnections() = clients.forEach { it.checkConnection() }
 
-    protected abstract fun initialPayload(ctx: Context): P
+    protected abstract fun initializeData(ctx: ClientContext): P
 
     override fun init(ctx: Context, configurer: WebSocketConfigurer) {
         val clientId = UUID.randomUUID()
@@ -30,9 +31,10 @@ abstract class WebSocketController<P>(
                 clientCtx = ClientContext(
                     webSocket = ws,
                     id = clientId,
-                    userAgent = userAgent,
-                    payload = initialPayload(ctx)
+                    userAgent = userAgent
                 )
+                clientCtx.`internal@data` = initializeData(clientCtx)
+
                 clients.add(clientCtx)
                 log.info("[{}] New client connected", clientCtx)
                 onConnect(clientCtx)
@@ -43,6 +45,7 @@ abstract class WebSocketController<P>(
                 onMessage(clientCtx, message)
             }
             onClose { _, closeStatus ->
+                clientCtx.close()
                 log.info(
                     "[{}] Closed - code={} reason={}",
                     clientCtx, closeStatus.code, closeStatus.reason
@@ -65,19 +68,21 @@ abstract class WebSocketController<P>(
     inner class ClientContext(
         private val webSocket: WebSocket,
         val id: UUID,
-        val userAgent: String,
-        val payload: P
-    ) {
+        val userAgent: String
+    ) : Closeable {
+        lateinit var `internal@data`: P
+        val data: P get() = `internal@data`
+
         val others: Collection<ClientContext> get() = clients - this
 
-        fun broadcast(message: Message<*>, includeSelf: Boolean = true) {
+        fun broadcast(message: Message, includeSelf: Boolean = true) {
             synchronized(clients) {
                 val receivers = if (includeSelf) clients else others
                 receivers.forEach { it.send(message) }
             }
         }
 
-        fun send(message: Message<*>) {
+        fun send(message: Message) {
             webSocket.render(message)
         }
 
@@ -96,6 +101,12 @@ abstract class WebSocketController<P>(
         }
 
         override fun toString(): String = id.toString()
+
+        override fun close() {
+            data.apply {
+                if(this is Closeable) close()
+            }
+        }
     }
 
     protected abstract fun onConnect(ctx: ClientContext)
