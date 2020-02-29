@@ -1,6 +1,7 @@
 package de.groovybyte.gamejam.styxreactor.datatransfer
 
 import de.groovybyte.gamejam.styxreactor.chat.ChatMessage
+import de.groovybyte.gamejam.styxreactor.datatransfer.server2client.ServerMessage
 import de.groovybyte.gamejam.styxreactor.player.PlayerId
 import de.groovybyte.gamejam.styxreactor.utils.WebSocketController
 import java.io.Closeable
@@ -14,12 +15,13 @@ class GameSession(val ctx: WebSocketController<GameSession>.ClientContext) : Clo
         val ex: ScheduledExecutorService = Executors.newScheduledThreadPool(1)
     }
 
-    lateinit var testMessageSendTask: ScheduledFuture<*>
+    var testMessageSendTask: ScheduledFuture<*>? = null
 
     fun startTestMessageSender() {
+        stopTestMessageSender()
         testMessageSendTask = ex.scheduleAtFixedRate({
             ctx.send(
-                Message(
+                ServerMessage(
                     "chatcommand", ChatMessage(
                         PlayerId.SYSTEM_ID,
                         "${System.currentTimeMillis()}"
@@ -29,7 +31,12 @@ class GameSession(val ctx: WebSocketController<GameSession>.ClientContext) : Clo
         }, 1L, 1L, TimeUnit.SECONDS)
     }
 
+    fun stopTestMessageSender() {
+        testMessageSendTask?.cancel(true)
+        testMessageSendTask = null
+    }
+
     override fun close() {
-        testMessageSendTask.cancel(true)
+        testMessageSendTask?.cancel(true)
     }
 }

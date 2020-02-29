@@ -1,14 +1,14 @@
 package de.groovybyte.gamejam.styxreactor
 
-import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
+import com.fasterxml.jackson.databind.ObjectMapper
+import com.fasterxml.jackson.module.kotlin.registerKotlinModule
 import de.groovybyte.gamejam.styxreactor.datatransfer.GameController
-import de.groovybyte.gamejam.styxreactor.datatransfer.Message
-import de.groovybyte.gamejam.styxreactor.fixtures.WORLD_1
 import de.groovybyte.gamejam.styxreactor.utils.handler.DefaultHeadersHandler
 import de.groovybyte.gamejam.styxreactor.utils.handler.TraceIdHandler
 import io.jooby.Kooby
 import io.jooby.MediaType
 import io.jooby.json.JacksonModule
+import io.jooby.require
 import io.jooby.runApp
 
 const val APP_TITLE = "StyxReactor-Server"
@@ -28,6 +28,8 @@ class StyxReactorServer : Kooby({
     }
 
     install(JacksonModule())
+    val objectMapper = require<ObjectMapper>()
+    objectMapper.registerKotlinModule()
 
     //    decorator(AccessLogHandler())
     before(TraceIdHandler())
@@ -36,7 +38,7 @@ class StyxReactorServer : Kooby({
     ))
     assets("/", "www/index.html")
 
-    val playerController = GameController(log)
+    val playerController = GameController(log, objectMapper)
     ws("/ws", playerController)
         .consumes(MediaType.json)
         .produces(MediaType.json)
