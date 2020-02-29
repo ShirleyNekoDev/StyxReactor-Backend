@@ -12,6 +12,7 @@ const val APP_TITLE = "StyxReactor-Server"
 class StyxReactorServer : Kooby({
     name = APP_TITLE
     serverOptions {
+        port = config.getInt("port")
         gzip = true
         ioThreads = 8
         workerThreads = 2 * ioThreads
