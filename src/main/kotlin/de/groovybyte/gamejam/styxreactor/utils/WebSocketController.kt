@@ -102,7 +102,7 @@ abstract class WebSocketController<P>(
 
     protected abstract fun onMessage(
         ctx: ClientContext,
-        message: WebSocketMessage
+        jsonMessage: WebSocketMessage
     )
 
     protected abstract fun onClose(
