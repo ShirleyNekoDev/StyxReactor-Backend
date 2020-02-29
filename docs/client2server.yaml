@@ -1,7 +1,7 @@
 ChatPacket:
   type: chatmessage
   payload:
-    text: hello world
+    message: hello world
 
 Pings:
   type: ping
