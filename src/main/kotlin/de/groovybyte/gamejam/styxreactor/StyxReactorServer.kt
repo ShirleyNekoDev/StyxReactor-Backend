@@ -2,9 +2,9 @@ package de.groovybyte.gamejam.styxreactor
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.kotlin.registerKotlinModule
-import de.groovybyte.gamejam.styxreactor.datatransfer.GameController
-import de.groovybyte.gamejam.styxreactor.utils.handler.DefaultHeadersHandler
-import de.groovybyte.gamejam.styxreactor.utils.handler.TraceIdHandler
+import de.groovybyte.gamejam.styxreactor.game.WebSocketAPI
+import de.groovybyte.gamejam.styxreactor.framework.handler.DefaultHeadersHandler
+import de.groovybyte.gamejam.styxreactor.framework.handler.TraceIdHandler
 import io.jooby.Kooby
 import io.jooby.MediaType
 import io.jooby.json.JacksonModule
@@ -40,7 +40,7 @@ class StyxReactorServer : Kooby({
     )
     assets("/", "www/index.html")
 
-    val playerController = GameController(log, objectMapper)
+    val playerController = WebSocketAPI(log, objectMapper)
     ws("/ws", playerController)
         .consumes(MediaType.json)
         .produces(MediaType.json)
