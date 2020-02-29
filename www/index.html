@@ -5,11 +5,14 @@
     <title>Styx Reactor Backend</title>
     <style>
         #log {
+            font-family: monospace;
             border: thin solid black;
         }
 
         #log > p {
             margin: 0;
+            padding: 0.5em;
+            border-bottom: thin solid black;
         }
     </style>
 </head>
@@ -17,8 +20,8 @@
 <h1>Styx Reactor Backend</h1>
 
 <section>
-    <label for="playerId">PlayerID:</label>
-    <input type="text" value="" id="playerId"/>
+<!--    <label for="playerId">PlayerID:</label>-->
+    <input type="hidden" value="" id="playerId"/>
     <input type="button" value="Connect" id="connectBtn" onclick="openWS()"/>
 </section>
 <hr>
@@ -47,7 +50,8 @@
     function printLog(message) {
         const line = document.createElement("p");
         line.textContent = message;
-        logBox.appendChild(line);
+        logBox.insertBefore(line, logBox.childNodes[0]);
+        // logBox.appendChild(line);
     }
 
     function updateSendButton() {
