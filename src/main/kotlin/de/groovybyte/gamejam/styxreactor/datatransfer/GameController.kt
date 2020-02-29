@@ -6,13 +6,14 @@ import de.groovybyte.gamejam.styxreactor.datatransfer.client2server.ClientMessag
 import de.groovybyte.gamejam.styxreactor.datatransfer.exceptions.InvalidPayloadException
 import de.groovybyte.gamejam.styxreactor.datatransfer.server2client.ServerMessage
 import de.groovybyte.gamejam.styxreactor.utils.WebSocketController
+import de.groovybyte.gamejam.styxreactor.world.WorldController
 import io.jooby.WebSocketCloseStatus
 import io.jooby.WebSocketMessage
 import org.slf4j.Logger
 
 class GameController(
     log: Logger,
-    val objectMapper: ObjectMapper
+    private val objectMapper: ObjectMapper
 ) : WebSocketController<GameSession>(log) {
 
     override fun initializeData(ctx: ClientContext) = GameSession(ctx)
@@ -21,6 +22,7 @@ class GameController(
         ctx: ClientContext
     ) {
         // init player or something
+        WorldController.sendWorld(ctx)
     }
 
     private class Echo(val data: String) : Entity<Echo>
