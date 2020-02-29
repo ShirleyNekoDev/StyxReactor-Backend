@@ -1,6 +1,5 @@
-package app
+package de.groovybyte.gamejam.styxreactor
 
-import de.groovybyte.gamejam.styxreactor.StyxReactorServer
 import io.jooby.JoobyTest
 import io.jooby.StatusCode
 import okhttp3.OkHttpClient

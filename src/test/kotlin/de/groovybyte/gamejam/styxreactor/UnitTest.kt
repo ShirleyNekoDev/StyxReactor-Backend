@@ -1,6 +1,5 @@
-package app
+package de.groovybyte.gamejam.styxreactor
 
-import de.groovybyte.gamejam.styxreactor.StyxReactorServer
 import io.jooby.MockRouter
 import io.jooby.StatusCode
 import org.junit.jupiter.api.Test
