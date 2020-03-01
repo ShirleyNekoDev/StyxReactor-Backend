@@ -15,7 +15,7 @@
             background-position: 0 0, 0 4px, 4px -4px, -4px 0;
         }
 
-        #output td {
+        #output td, #output th {
             border: thin solid black;
             margin: 0;
             width: 25px;
@@ -25,13 +25,17 @@
             background-color: white;
         }
 
+        #output th {
+            background-color: lightgray;
+        }
+
         #output td.wall {
             color: white;
             background-color: black;
         }
 
         #output td.stealth {
-            background-color: lightgrey;
+            background-color: grey;
         }
 
         #output td.hole {
@@ -56,10 +60,25 @@ Json World:<br>
         console.log(world);
         table.innerHTML = "";
 
+        let tr = document.createElement("tr");
+        for (let x = -1; x < world.width; x++) {
+            let td = document.createElement("th");
+            if (x >= 0) td.textContent = x;
+            tr.appendChild(td);
+        }
+        table.appendChild(tr);
         for (let y = 0; y < world.height; y++) {
-            let tr = document.createElement("tr");
-            for (let x = 0; x < world.width; x++) {
-                tr.appendChild(createField(world.grid[x + world.width * y]));
+            tr = document.createElement("tr");
+            for (let x = -1; x < world.width; x++) {
+                let td;
+                if (x < 0) {
+                    td = document.createElement("th");
+                    td.textContent = y;
+                } else {
+                    td = createField(world.grid[x + world.width * y]);
+                    td.setAttribute("title", `x: ${x} y: ${y} i: ${x + y * world.width}`);
+                }
+                tr.appendChild(td);
             }
             table.appendChild(tr);
         }
