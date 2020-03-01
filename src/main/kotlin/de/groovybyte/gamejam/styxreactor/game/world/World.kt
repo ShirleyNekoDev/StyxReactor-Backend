@@ -1,6 +1,9 @@
 package de.groovybyte.gamejam.styxreactor.game.world
 
+import com.fasterxml.jackson.databind.ObjectMapper
+import com.fasterxml.jackson.module.kotlin.readValue
 import de.groovybyte.gamejam.styxreactor.game.datatransfer.Entity
+import java.io.File
 
 data class World(
     val width: Int,
@@ -26,42 +29,13 @@ data class World(
             )
         }
 
-        /*
-
-    private val EMPTY_FIELD = Field.AccessibleField(
-        isStealth = false,
-        textureId = "texture:field:empty"
-    )
-
-    private fun World.generateBorderWalls(): World = copy(
-        width = width + 2,
-        height = height + 2,
-        grid = List(width * height) { index ->
-            val x = index % width
-            val y = index / width
-            wallField.takeIf { x == 0 || x == width - 1 || y == 0 || y == height - 1 }
+        fun load(objectMapper: ObjectMapper, resourcePath: String): World {
+            return File(".").resolveSibling(resourcePath)
+                .inputStream()
+                .use {
+                    objectMapper.readValue(it)
+                }
         }
-    )
-
-    private fun generateWorldBorderWalls(innerWidth: Int, innerHeight: Int, wallField: Field): List<Field?> {
-        val width = innerWidth + 2
-        val height = innerHeight + 2
-        return List(width * height) { index ->
-            val x = index % width
-            val y = index / width
-            wallField.takeIf { x == 0 || x == width - 1 || y == 0 || y == height - 1 }
-        }
-    }
-
-    fun generateWorld(innerWidth: Int, innerHeight: Int, fieldGenerator: (x: Int, y: Int) -> Field): World {
-        val grid = generateWorldBorderWalls(i)
-        return World(
-            width = width,
-            height = height,
-            grid = grid
-        )
-    }
-         */
     }
 
     fun getField(x: Int, y: Int): Field {
