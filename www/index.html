@@ -20,6 +20,10 @@
 <h1>Styx Reactor Backend</h1>
 
 <section>
+    <label for="message">Host:</label>
+    <input type="text" value="localhost" id="host"/>
+    <label for="message">Port:</label>
+    <input type="number" value="61737" id="port"/>
 <!--    <label for="playerId">PlayerID:</label>-->
     <input type="hidden" value="" id="playerId"/>
     <input type="button" value="Connect" id="connectBtn" onclick="openWS()"/>
@@ -33,12 +37,12 @@
 <hr>
 <section id="log"></section>
 <script>
-    const port = 25566;
-    const url = "ws://localhost:" + port + "/ws";
-
     let ws;
     window.onbeforeunload = closeWS;
 
+    const hostField = document.getElementById("host");
+    const portField = document.getElementById("port");
+    
     const playerIdField = document.getElementById("playerId");
     const connectBtn = document.getElementById("connectBtn");
 
@@ -66,6 +70,8 @@
 
     function openWS() {
         const playerId = playerIdField.value;
+        const url = "ws://" + hostField.value + ":" + portField.value + "/ws";
+        console.log(url);
         if (playerId && playerId.length)
             ws = new WebSocket(url + "?playerId=" + playerId);
         else

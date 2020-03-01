@@ -21,6 +21,7 @@ class StyxReactorServer : Kooby({
     name = APP_TITLE
     serverOptions {
         port = config.getInt("port")
+        host = config.getString("host")
         gzip = true
         ioThreads = 8
         workerThreads = 2 * ioThreads
