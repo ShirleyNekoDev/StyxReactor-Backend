@@ -1,0 +1,2132 @@
+{
+    "width": 22,
+    "height": 21,
+    "grid": [
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": true,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "ACCESSIBLE",
+            "isStealth": false,
+            "textureId": "empty"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "WALL",
+            "textureId": "wall"
+        },
+        {
+            "type": "HOLE",
+            "textureId": "hole"
+        }
+    ]
+}
