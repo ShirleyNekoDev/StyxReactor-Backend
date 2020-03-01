@@ -5,11 +5,14 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import de.groovybyte.gamejam.styxreactor.framework.ClientContext
 import de.groovybyte.gamejam.styxreactor.framework.WebSocketController
 import de.groovybyte.gamejam.styxreactor.game.chat.ChatController
+import de.groovybyte.gamejam.styxreactor.game.chat.ChatMessage
 import de.groovybyte.gamejam.styxreactor.game.datatransfer.client2server.ClientMessage
 import de.groovybyte.gamejam.styxreactor.game.datatransfer.exceptions.InvalidPayloadException
 import de.groovybyte.gamejam.styxreactor.game.datatransfer.sendError
 import de.groovybyte.gamejam.styxreactor.game.datatransfer.server2client.ServerMessage
 import de.groovybyte.gamejam.styxreactor.game.datatransfer.utils.asEcho
+import de.groovybyte.gamejam.styxreactor.game.ping.PingController
+import de.groovybyte.gamejam.styxreactor.game.world.FieldPosition
 import de.groovybyte.gamejam.styxreactor.game.world.WorldController
 import io.jooby.WebSocketCloseStatus
 import io.jooby.WebSocketMessage
@@ -57,6 +60,7 @@ class WebSocketAPI(
 //            "test_stop" -> packet.ctx.session.stopTestMessageSender()
             "echo" -> ctx.send(ServerMessage("echo", packet.asEcho()))
             "chatmessage" -> ChatController.receive(ctx, packet)
+            "ping" -> PingController.receive(ctx, packet)
         }
     }
 
