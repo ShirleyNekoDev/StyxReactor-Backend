@@ -1,29 +1,35 @@
 ChatPacket:
-  type: chatmessage
+  command: chatmessage
   payload:
-    message: hello world
+    message: hello world  # type string
 
 Pings:
-  type: ping
+  command: ping
   payload:
-    position: #x, y
-    type: ATTENTION / WARNING / ATTACK_HERE / MOVING_TO / WILL_DASH
+    position: x, y  # type int
+    type: ATTENTION / WARNING / ATTACK_HERE / MOVING_TO / WILL_DASH # type as string
 
 Emotes:
-  type: emote
+  command: emote
   payload:
-    icon: TROLL_FACE
+    icon_id: TROLL_FACE # type String
 
 Moving: # responds with path
-  type: movement
-  payload:
-    type: set_waypoint / set_target / clear_movement
-    position: #x, y
-
-Abilities:
-  type: action
+  command: movement
   payload:
     type: hover / set
-    action: table_flip
-    payload:
-      target: subgrid-location / location / character / self (+free) # maybe array
+    new_position: x, y, # type int
+    route: Position[]   # positions of type x,y (int, int)
+
+Interact:
+  command: interact
+  payload:
+    type: hover / set
+    action_type: heal / attack / ability
+    action:
+      target: location / character / self / ...
+      allowed_targets: allies / enemies
+
+Client-Alive-Signal:
+  command: alive
+  payload: debug-message      # not actively used, can be used for debug purposes, type String

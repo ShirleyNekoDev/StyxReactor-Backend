@@ -1,5 +1,5 @@
 Send World:
-  type: world
+  command: set_world
   payload:
     size: #width, height
     grid: # 1d array of fields
@@ -10,13 +10,15 @@ Send World:
           stealth: # if accessible
           texture: # some texture id # if not hole
           object: # id # if object
+    # object not used yet
     objects: [Object]
       Object:
         id: # id
         outline: # array of points (convex)
 
+# not used yet
 Send Game State:
-  type: gamestate
+  command: update_gamestate
   payload:
     characters:
       - position: #x, y
